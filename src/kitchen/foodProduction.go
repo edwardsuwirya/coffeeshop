@@ -32,10 +32,10 @@ func (p *production) Produce() {
 	//<-status
 	utils.PrintHeader()
 	for s := range status {
-		if strings.HasPrefix(s, "Menyajikan") {
+		if strings.HasPrefix(s, utils.SAJIAN) {
 			var s = strings.Split(s, ",")
-			var o = strings.Split(s[0], "Menyajikan ")
-			fmt.Printf("%-10s %-50s %-20s\n", utils.Trimming(o[1]), utils.Trimming(s[1]), utils.Trimming(s[2])+" "+utils.Trimming(s[3]))
+			var o = strings.Split(s[0], utils.SAJIAN+" ")
+			fmt.Printf(utils.FORMAT_STRING_HEADER, utils.Trimming(o[1]), utils.Trimming(s[1]), utils.Trimming(s[2])+" "+utils.Trimming(s[3]))
 		}
 	}
 	utils.PrintBorder()

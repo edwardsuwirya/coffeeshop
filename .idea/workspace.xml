@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d648e036-1937-473e-b12b-94a95873f48a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/utils/constants.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coffee/cappucino.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/coffee/cappucino.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coffee/espresso.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/coffee/espresso.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/kitchen/foodProduction.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/kitchen/foodProduction.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/header.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/header.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +86,7 @@
     <MESSAGE value="Refactoring multi package" />
     <MESSAGE value="New Type Alias CoffeeOrder" />
     <MESSAGE value="change package name to kitchen" />
-    <option name="LAST_COMMIT_MESSAGE" value="change package name to kitchen" />
+    <MESSAGE value="change function name to NewKitchenProduction" />
+    <option name="LAST_COMMIT_MESSAGE" value="change function name to NewKitchenProduction" />
   </component>
 </project>

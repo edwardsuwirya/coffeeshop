@@ -7,12 +7,12 @@ import (
 
 func PrintHeader() {
 	PrintBorder()
-	fmt.Printf("%-10s %-50s %-20s\n", "Order", "Item", "Serving Time")
+	fmt.Printf(FORMAT_STRING_HEADER, "Order", "Item", "Serving Time")
 	PrintBorder()
 
 }
 func PrintBorder() {
-	fmt.Printf("%120s\n", strings.Repeat("=", 120))
+	fmt.Printf(FORMAT_STRING_BORDER, strings.Repeat("=", BORDER_LENGTH))
 }
 
 func Trimming(s string) string {

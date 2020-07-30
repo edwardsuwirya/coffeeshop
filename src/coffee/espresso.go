@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"sync"
 	"time"
+	"utils"
 )
 
 type espresso struct {
@@ -29,7 +30,7 @@ func (c *espresso) Start(id string, status chan string, orderStatus *sync.WaitGr
 func (c *espresso) prepare() {
 
 	time.Sleep(4000 * time.Millisecond)
-	info := fmt.Sprintf("Giling kopi :%s", c.coffee)
+	info := fmt.Sprintf(utils.FORMAT_GILING_KOPI, c.coffee)
 	c.updateStatus <- info
 
 	c.finish()
@@ -37,10 +38,10 @@ func (c *espresso) prepare() {
 
 func (c *espresso) finish() {
 	time.Sleep(1000 * time.Millisecond)
-	c.updateStatus <- "Tuangkan ke cangkir"
+	c.updateStatus <- utils.TUANG_CANGKIR
 
 	c.finishTime = time.Now()
-	info := fmt.Sprintf("Menyajikan %s, Kopi Espresso %s, mulai %v, selesai %v", c.orderId, c.coffee, c.startTime.Format("2006-01-02 15:04:05"), c.finishTime.Format("2006-01-02 15:04:05"))
+	info := fmt.Sprintf(utils.FORMAT_SAJIAN_ESPRESSO, c.orderId, c.coffee, c.startTime.Format(utils.FORMAT_TIME_STAMP), c.finishTime.Format(utils.FORMAT_TIME_STAMP))
 	c.updateStatus <- info
 	c.orderStatus.Done()
 	//fmt.Printf("Finish order %s : %v\n", c.orderId, time.Now())
