@@ -40,7 +40,7 @@ func (c *espresso) finish() {
 	c.updateStatus <- "Tuangkan ke cangkir"
 
 	c.finishTime = time.Now()
-	info := fmt.Sprintf("Menyajikan %s, Kopi Espresso %s, mulai %v, selesai %v", c.orderId, c.coffee,c.startTime.Format("2006-01-02 15:04:05"), c.finishTime.Format("2006-01-02 15:04:05"))
+	info := fmt.Sprintf("Menyajikan %s, Kopi Espresso %s, mulai %v, selesai %v", c.orderId, c.coffee, c.startTime.Format("2006-01-02 15:04:05"), c.finishTime.Format("2006-01-02 15:04:05"))
 	c.updateStatus <- info
 	c.orderStatus.Done()
 	//fmt.Printf("Finish order %s : %v\n", c.orderId, time.Now())

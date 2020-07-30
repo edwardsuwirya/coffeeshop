@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d648e036-1937-473e-b12b-94a95873f48a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/foodProduction/coffeemaker.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/order/iorder.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/order/order.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/header.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/coffee/Cappucino.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/coffee/cappucino.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/coffee/Espresso.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/coffee/espresso.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/coffee/ICoffee.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/coffee/icoffee.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coffee/cappucino.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/coffee/cappucino.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coffee/espresso.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/coffee/espresso.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/order/iorder.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/iorder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/order/order.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/order.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +37,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
@@ -84,5 +80,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactoring multi package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring multi package" />
   </component>
 </project>

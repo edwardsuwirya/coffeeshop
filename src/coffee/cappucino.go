@@ -52,7 +52,7 @@ func (c *cappucino) finish() {
 	time.Sleep(1000 * time.Millisecond)
 	c.updateStatus <- "Tuangkan ke cangkir"
 	c.finishTime = time.Now()
-	info := fmt.Sprintf("Menyajikan %s, Kopi Capucino %s %s, mulai %v, selesai %v", c.orderId, c.coffee,c.milk, c.startTime.Format("2006-01-02 15:04:05"), c.finishTime.Format("2006-01-02 15:04:05"))
+	info := fmt.Sprintf("Menyajikan %s, Kopi Capucino %s %s, mulai %v, selesai %v", c.orderId, c.coffee, c.milk, c.startTime.Format("2006-01-02 15:04:05"), c.finishTime.Format("2006-01-02 15:04:05"))
 	c.updateStatus <- info
 	c.orderStatus.Done()
 	//fmt.Printf("Finish order %s : %v\n", c.orderId, time.Now())
