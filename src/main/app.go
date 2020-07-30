@@ -15,7 +15,7 @@ func newApp(orders order.IOrder) *coffeeShopApp {
 	}
 }
 func (csp coffeeShopApp) run() {
-	kitchen.NewCoffeeMaker(csp.orders).Produce()
+	kitchen.NewKitchenProduction(csp.orders).Produce()
 }
 func main() {
 	newApp(&order.DummyOrder{}).run()

@@ -41,6 +41,6 @@ func (p *production) Produce() {
 	utils.PrintBorder()
 }
 
-func NewCoffeeMaker(orders *[]order.Order) *production {
+func NewKitchenProduction(orders *[]order.Order) *production {
 	return &production{orders}
 }
