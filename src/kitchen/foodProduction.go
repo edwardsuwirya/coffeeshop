@@ -1,4 +1,4 @@
-package foodProduction
+package kitchen
 
 import (
 	"fmt"
@@ -8,15 +8,15 @@ import (
 	"utils"
 )
 
-type coffeeMaker struct {
+type production struct {
 	orders *[]order.Order
 }
 
-func (cm *coffeeMaker) Produce() {
+func (p *production) Produce() {
 	status := make(chan string)
 
 	var orderStatus sync.WaitGroup
-	for _, o := range *(cm.orders) {
+	for _, o := range *(p.orders) {
 		for _, oc := range o.Orders {
 			orderStatus.Add(1)
 			go oc.Start(o.OrderId, status, &orderStatus)
@@ -41,6 +41,6 @@ func (cm *coffeeMaker) Produce() {
 	utils.PrintBorder()
 }
 
-func NewCoffeeMaker(orders *[]order.Order) *coffeeMaker {
-	return &coffeeMaker{orders}
+func NewCoffeeMaker(orders *[]order.Order) *production {
+	return &production{orders}
 }

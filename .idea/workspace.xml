@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d648e036-1937-473e-b12b-94a95873f48a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/coffee/cappucino.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/coffee/cappucino.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/coffee/espresso.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/coffee/espresso.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/order/iorder.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/iorder.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/order/order.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/order.go" afterDir="false" />
-    </list>
+    <list default="true" id="d648e036-1937-473e-b12b-94a95873f48a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +77,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactoring multi package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring multi package" />
+    <MESSAGE value="New Type Alias CoffeeOrder" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Type Alias CoffeeOrder" />
   </component>
 </project>

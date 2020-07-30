@@ -1,7 +1,7 @@
 package main
 
 import (
-	"foodProduction"
+	"kitchen"
 	"order"
 )
 
@@ -15,7 +15,7 @@ func newApp(orders order.IOrder) *coffeeShopApp {
 	}
 }
 func (csp coffeeShopApp) run() {
-	foodProduction.NewCoffeeMaker(csp.orders).Produce()
+	kitchen.NewCoffeeMaker(csp.orders).Produce()
 }
 func main() {
 	newApp(&order.DummyOrder{}).run()
